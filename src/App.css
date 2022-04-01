@@ -1,5 +1,24 @@
 body {
+  background-color: hsl(222, 26%, 31%);
   font-family: "Spartan", sans-serif;
+  font-size: 32px;
+  padding: 1em;
   position: relative;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);;
+  font-size: 0.8em;
+}
+h2 {
+  color: hsl(0, 0%, 100%);;
+  font-size: 0.5em;
+}
+
+.container {
+  max-width: 50em;
 }

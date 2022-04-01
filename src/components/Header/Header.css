@@ -1,0 +1,48 @@
+header {
+  width: 100%;
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.app-name {
+  transform: translateY(-50%);
+}
+
+.theme-toggle-container {
+  display: flex;
+  gap: 0.8em;
+  align-items: center;
+  margin-left: auto;
+}
+
+.switch {
+  width: 2.5em;
+  padding: 0.2em;
+  border-radius: 2em;
+  background-color: hsl(223, 31%, 20%);
+  position: relative;
+}
+
+.theme-number {
+  position: absolute;
+  top: 0;
+}
+.theme-number:nth-child(1) {
+  left: 0;
+  transform: translate(100%, -100%);
+}
+.theme-number:nth-child(2) {
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+.theme-number:nth-child(3) {
+  right: 0;
+  transform: translate(-50%, -100%);
+}
+
+.knob {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: hsl(6, 63%, 50%);
+}
