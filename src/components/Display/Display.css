@@ -1,11 +1,18 @@
 .display {
   width: 100%;
-  padding: 0.8em;
+  padding: 1em 0.8em;
   font-family: inherit;
   font-size: inherit;
   text-align: right;
   border-style: none;
-  border-radius: 0.2em;
+  border-radius: 0.3em;
+  margin-bottom: 0.5em;
   color: hsl(0, 0%, 100%);;
   background-color: hsl(224, 36%, 15%);
+}
+
+@media (max-width: 40rem) {
+  .display {
+    padding: 0.8em 0.6em;
+  }
 }

@@ -1,5 +1,5 @@
-import React from "react";
+import "./Button.css";
 
-export default function Button() {
-  return <div>Button</div>;
+export default function Button({ button }) {
+  return <div className={`button ${button.type}`}>{button.value}</div>;
 }
