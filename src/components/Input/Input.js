@@ -2,8 +2,8 @@ import "./Input.css";
 import { CalculatorButtons } from "../../config/CalculatorButtons";
 import Button from "../Shared/Button/Button";
 
-const calculatorButtons = CalculatorButtons.map((button, i) => {
-  return <Button button={button} key={i} />;
+const calculatorButtons = CalculatorButtons.map((button) => {
+  return <Button button={button} key={button.value} />;
 });
 
 export default function Input() {

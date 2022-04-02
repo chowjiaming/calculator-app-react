@@ -1,6 +1,6 @@
 .button {
   color: hsl(0, 0%, 100%);
-  padding: 0.5em 0.4em 0.3em 0.4em;
+  padding: 0.5em 0.8em 0.3em 0.8em;
   border-radius: 0.3em;
   color: hsl(221, 14%, 31%);
   text-transform: uppercase;
@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 45rem) {
   .button {
     padding: 0.4em 0.3em 0.2em 0.3em;
     border-radius: 0.15em;
