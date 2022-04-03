@@ -1,6 +1,6 @@
-import "./Input.css";
 import { CalculatorButtons } from "../../config/CalculatorButtons";
 import Button from "../Shared/Button/Button";
+import "./Input.css";
 
 const calculatorButtons = CalculatorButtons.map((button) => {
   return <Button button={button} key={button.value} />;

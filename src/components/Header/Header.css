@@ -20,6 +20,9 @@ header {
   padding: 0.2em;
   border-radius: 2em;
   background-color: hsl(223, 31%, 20%);
+}
+
+.switch-container {
   position: relative;
 }
 
