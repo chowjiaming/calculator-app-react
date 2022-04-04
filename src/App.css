@@ -1,26 +1,53 @@
-body {
-  background-color: var(--main-background);
-  font-family: "Spartan", sans-serif;
-  font-size: 32px;
-  padding: 1em;
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+
+:root {
+  box-sizing: border-box;
 }
 
-h1 {
-  color: hsl(0, 0%, 100%);
-  font-size: 0.8em;
-}
-h2 {
-  color: hsl(0, 0%, 100%);
-  font-size: 0.5em;
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-@media (max-width: 45rem) {
-  .container {
-    margin-bottom: 2em;
-  }
+[data-theme="1"] {
+  --main-background: hsl(222, 26%, 31%);
+  --toggle-keypad-background: hsl(223, 31%, 20%);
+  --screen-background: hsl(224, 36%, 15%);
+  --key-background-one: hsl(225, 21%, 49%);
+  --key-shadow-one: hsl(224, 28%, 35%);
+  --key-background-two: hsl(6, 63%, 50%);
+  --key-shadow-two: hsl(6, 70%, 34%);
+  --key-background-three: hsl(30, 25%, 89%);
+  --key-shadow-three: hsl(28, 16%, 65%);
+  --font-colour-one: hsl(221, 14%, 31%);
+  --font-colour-two: hsl(0, 0%, 100%);
+}
+[data-theme="2"] {
+  --main-background: hsl(0, 0%, 90%);
+  --toggle-keypad-background: hsl(0, 5%, 81%);
+  --screen-background: hsl(0, 0%, 93%);
+  --key-background-one: hsl(185, 42%, 37%);
+  --key-shadow-one: hsl(185, 58%, 25%);
+  --key-background-two: hsl(25, 98%, 40%);
+  --key-shadow-two: hsl(25, 99%, 27%);
+  --key-background-three: hsl(45, 7%, 89%);
+  --key-shadow-three: hsl(35, 11%, 61%);
+  --font-colour-one: hsl(60, 10%, 19%);
+  --font-colour-two: hsl(0, 0%, 100%);
+}
+[data-theme="3"] {
+  --main-background: hsl(268, 75%, 9%);
+  --toggle-keypad-background: hsl(268, 71%, 12%);
+  --screen-background: hsl(268, 71%, 12%);
+  --key-background-one: hsl(281, 89%, 26%);
+  --key-shadow-one: hsl(285, 91%, 52%);
+  --key-background-two: hsl(176, 100%, 44%);
+  --key-shadow-two: hsl(177, 92%, 70%);
+  --key-background-three: hsl(268, 47%, 21%);
+  --key-shadow-three: hsl(290, 70%, 36%);
+  --font-colour-one: hsl(52, 100%, 62%);
+  --font-colour-two: hsl(0, 0%, 100%);
 }
