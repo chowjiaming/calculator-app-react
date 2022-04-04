@@ -19,7 +19,7 @@ header {
   width: 2.5em;
   padding: 0.2em;
   border-radius: 2em;
-  background-color: hsl(223, 31%, 20%);
+  background-color: var(--toggle-keypad-background)
 }
 
 .switch-container {
@@ -47,5 +47,5 @@ header {
   width: 0.5em;
   height: 0.5em;
   border-radius: 50%;
-  background-color: hsl(6, 63%, 50%);
+  background-color: var(--key-background-two);
 }

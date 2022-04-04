@@ -1,5 +1,5 @@
 body {
-  background-color: hsl(222, 26%, 31%);
+  background-color: var(--main-background);
   font-family: "Spartan", sans-serif;
   font-size: 32px;
   padding: 1em;

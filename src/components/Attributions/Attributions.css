@@ -1,6 +1,6 @@
 .attribution {
   font-size: 0.5em;
-  color: hsl(0, 0%, 100%);
+  color: var(--font-colour-two);
   text-align: center;
   position: absolute;
   bottom: 1rem;
@@ -9,5 +9,5 @@
 }
 
 .attribution a {
-  color: hsl(6, 63%, 50%);
+  color: var(--key-background-two);
 }
