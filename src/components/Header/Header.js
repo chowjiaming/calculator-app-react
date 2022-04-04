@@ -5,7 +5,22 @@ import "./Header.css";
 export default function Header() {
   const { theme, handleNumberClick, handleSwitchClick } =
     useContext(ThemeContext);
-  console.log(theme);
+  let knobTheme;
+  switch (theme.number) {
+    case 1:
+      knobTheme = "theme-one";
+      break;
+    case 2:
+      knobTheme = "theme-two";
+      break;
+    case 3:
+      knobTheme = "theme-three";
+      break;
+    default:
+      knobTheme = "theme-one";
+      break;
+  }
+
   return (
     <header>
       <h1 className="app-name">calc</h1>
@@ -22,7 +37,7 @@ export default function Header() {
             3
           </h2>
           <div className="switch" onClick={handleSwitchClick}>
-            <div className="knob" />
+            <div className={`knob ${knobTheme}`} />
           </div>
         </div>
       </div>

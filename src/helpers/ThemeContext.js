@@ -1,9 +1,10 @@
-import { createContext, useState } from "react";
+import { createContext } from "react";
+import { useLocalStorage } from "./useLocalStorage";
 
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState({
+  const [theme, setTheme] = useLocalStorage("theme", {
     number: 1,
     ascending: true,
   });

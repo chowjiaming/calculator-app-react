@@ -19,7 +19,8 @@ header {
   width: 2.5em;
   padding: 0.2em;
   border-radius: 2em;
-  background-color: var(--toggle-keypad-background)
+  background-color: var(--toggle-keypad-background);
+  transition: all 0.5s;
 }
 
 .switch-container {
@@ -48,4 +49,13 @@ header {
   height: 0.5em;
   border-radius: 50%;
   background-color: var(--key-background-two);
+  transition: all 0.5s;
+}
+.theme-two {
+  margin: 0 50%;
+  transform: translateX(-50%);
+}
+.theme-three {
+  margin-left: 100%;
+  transform: translateX(-100%);
 }

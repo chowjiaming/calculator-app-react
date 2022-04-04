@@ -51,3 +51,7 @@
   --font-colour-one: hsl(52, 100%, 62%);
   --font-colour-two: hsl(0, 0%, 100%);
 }
+
+body {
+  position: relative;
+}

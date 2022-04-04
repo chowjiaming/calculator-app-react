@@ -5,7 +5,8 @@
   gap: 0.7em;
   padding: 0.9em;
   border-radius: 0.3em;
-  background-color: var(--toggle-keypad-background)
+  background-color: var(--toggle-keypad-background);
+  transition: all .5s;
 }
 
 @media (max-width: 45rem) {
