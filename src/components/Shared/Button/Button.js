@@ -3,14 +3,35 @@ import CalculatorContext from "../../../helpers/CalculatorContext";
 import "./Button.css";
 
 export default function Button({ button }) {
-  const { handleClick } = useContext(CalculatorContext);
+  const { type, value } = button;
+  const {
+    resetClickHandler,
+    deleteClickHandler,
+    decimalClickHandler,
+    operatorClickHandler,
+    equalsClickHandler,
+    numClickHandler,
+  } = useContext(CalculatorContext);
+
   return (
     <div
-      className={`button ${button.type}`}
-      id={button.value}
-      onClick={handleClick}
+      className={`button ${type}`}
+      id={value}
+      onClick={
+        type === "rst"
+          ? resetClickHandler
+          : type === "opr"
+          ? operatorClickHandler
+          : type === "del"
+          ? deleteClickHandler
+          : type === 'dec'
+          ? decimalClickHandler
+          : type === "eql"
+          ? equalsClickHandler
+          : numClickHandler
+      }
     >
-      {button.value}
+      {value}
     </div>
   );
 }

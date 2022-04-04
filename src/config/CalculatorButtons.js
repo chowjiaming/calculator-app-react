@@ -13,7 +13,7 @@ export const CalculatorButtons = [
   new CalculatorButton("num", 2),
   new CalculatorButton("num", 3),
   new CalculatorButton("opr", "-"),
-  new CalculatorButton("opr", "."),
+  new CalculatorButton("dec", "."),
   new CalculatorButton("num", 0),
   new CalculatorButton("opr", "/"),
   new CalculatorButton("opr", "x"),

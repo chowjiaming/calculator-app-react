@@ -1,6 +1,10 @@
+.display-wrapper {
+  position: relative;
+}
+
 .display {
   width: 100%;
-  padding: 1em 0.8em;
+  padding: 1em 0.8em 0.8em 0.8em;
   font-family: inherit;
   font-size: inherit;
   text-align: right;
@@ -9,11 +13,18 @@
   margin-bottom: 0.5em;
   color: var(--font-colour-two);
   background-color: var(--screen-background);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 @media (max-width: 45rem) {
   .display {
-    padding: 0.8em 0.6em;
+    padding: 1em 0.6em 0.6em 0.6em;
   }
+}
+
+.calculate-statement {
+  position: absolute;
+  font-size: 0.6em;
+  color: var(--key-background-two);
+  transform: translate(0.5em, 0.5em);
 }
