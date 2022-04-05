@@ -1,7 +1,7 @@
 .button {
-  padding: 0.4em 1em 0.2em 1em;
+  padding: 0.5em 0.6em 0.3em 0.6em;
+  border-radius: 0.15em;
   border: none;
-  border-radius: 0.3em;
   color: var(--font-colour-two);
   font-family: inherit;
   font-size: inherit;
@@ -23,10 +23,10 @@
   color: var(--font-colour-one);
 }
 
-@media (max-width: 45rem) {
+@media (min-width: 45rem) {
   .button {
-    padding: 0.5em 0.6em 0.3em 0.6em;
-    border-radius: 0.15em;
+    padding: 0.4em 1em 0.2em 1em;
+    border-radius: 0.3em;
   }
 }
 

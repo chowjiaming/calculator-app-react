@@ -4,7 +4,7 @@
 
 .display {
   width: 100%;
-  padding: 1.1em 0.8em 1em 0.8em;
+  padding: 1em 0.6em 0.9em 0.6em;
   font-family: inherit;
   font-size: inherit;
   text-align: right;
@@ -16,9 +16,9 @@
   transition: all 0.3s;
 }
 
-@media (max-width: 45rem) {
+@media (min-width: 45rem) {
   .display {
-    padding: 1em 0.6em 0.9em 0.6em;
+    padding: 1.1em 0.8em 1em 0.8em;
   }
 }
 
