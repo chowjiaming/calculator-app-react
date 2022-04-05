@@ -1,8 +1,12 @@
 import { useContext } from "react";
 import CalculatorContext from "../../../helpers/calculatorContext";
+import ThemeContext from "../../../helpers/themeContext";
+import { themeClass } from "../../../helpers/themeHelpers";
 import "./Button.css";
 
 export default function Button({ button }) {
+  const { theme } = useContext(ThemeContext);
+  const buttonClass = themeClass(theme.number);
   const { type, value } = button;
   const {
     resetClickHandler,
@@ -15,7 +19,7 @@ export default function Button({ button }) {
 
   return (
     <button
-      className={`button ${type}`}
+      className={`button button${buttonClass} ${type}`}
       onClick={
         type === "rst"
           ? resetClickHandler
@@ -23,7 +27,7 @@ export default function Button({ button }) {
           ? operatorClickHandler
           : type === "del"
           ? deleteClickHandler
-          : type === 'dec'
+          : type === "dec"
           ? decimalClickHandler
           : type === "eql"
           ? equalsClickHandler

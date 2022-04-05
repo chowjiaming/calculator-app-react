@@ -19,6 +19,10 @@
   box-shadow: 0 5px 0 var(--key-background-three);
 }
 
+.button-theme-one {
+  color: var(--font-colour-one);
+}
+
 @media (max-width: 45rem) {
   .button {
     padding: 0.5em 0.6em 0.3em 0.6em;
@@ -41,6 +45,9 @@
   background-color: var(--key-shadow-one);
   box-shadow: 0 5px 0 var(--key-background-one);
 }
+.del.button-theme-one {
+  color: var(--font-colour-two);
+}
 
 .rst {
   font-size: 0.6em;
@@ -54,6 +61,9 @@
   background-color: var(--key-shadow-one);
   box-shadow: 0 5px 0 var(--key-background-one);
 }
+.rst.button-theme-one {
+  color: var(--font-colour-two);
+}
 
 .eql {
   font-size: 0.6em;
@@ -66,4 +76,10 @@
 .eql:hover {
   background-color: var(--key-shadow-two);
   box-shadow: 0 5px 0 var(--key-background-two);
+}
+.eql.button-theme-one {
+  color: var(--font-colour-two);
+}
+.eql.button-theme-three {
+  color: var(--key-background-one);
 }

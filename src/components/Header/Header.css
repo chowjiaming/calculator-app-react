@@ -63,11 +63,11 @@ header {
   background-color: var(--key-background-two);
   transition: all 0.5s;
 }
-.theme-two {
+.knob-theme-two {
   margin: 0 50%;
   transform: translateX(-50%);
 }
-.theme-three {
+.knob-theme-three {
   margin-left: 100%;
   transform: translateX(-100%);
 }

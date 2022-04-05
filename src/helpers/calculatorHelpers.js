@@ -18,6 +18,6 @@ export const calculate = (x, y, operator) => {
     default:
       answer = x / y;
   }
-  if (answer.toString().length >= 6) return answer.toExponential(6);
+  if (answer.toString().length >= 7) return answer.toExponential(7);
   return answer;
 };
