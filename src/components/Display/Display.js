@@ -7,7 +7,6 @@ export default function Display() {
   console.log(calculator);
   return (
     <div className="display-wrapper">
-      <p className="calculate-statement">{calculator.statement}</p>
       <input
         className="display"
         placeholder="0"

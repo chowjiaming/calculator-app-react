@@ -3,89 +3,19 @@ import { createContext, useState } from "react";
 const CalculatorContext = createContext();
 
 export const CalculatorProvider = ({ children }) => {
-  const [calculator, setCalculator] = useState({
-    operator: "",
-    input: "",
-    statement: "",
-    error: "",
-  });
+  const [calculator, setCalculator] = useState({});
 
-  const resetClickHandler = () => {
-    setCalculator({
-      operator: "",
-      input: "",
-      statement: "",
-      error: "",
-    });
-  };
+  const resetClickHandler = () => {};
 
-  const deleteClickHandler = () => {
-    setCalculator((prevState) => {
-      return {
-        ...prevState,
-        input: "",
-        statement: prevState.statement,
-      };
-    });
-  };
+  const deleteClickHandler = () => {};
 
-  const numClickHandler = (e) => {
-    const value = e.target.id;
+  const numClickHandler = (e) => {};
 
-    if (!(calculator.input.toString().length < 10)) {
-      setCalculator({ ...calculator, error: "Too many digits!" });
-    } else if (calculator.operator) {
-      setCalculator({
-        ...calculator,
-        operator: "",
-        input: "" + value,
-        statement: calculator.statement + value,
-      });
-    } else {
-      setCalculator({
-        ...calculator,
-        input: calculator.input + value,
-        statement: calculator.statement + value,
-      });
-    }
-  };
+  const decimalClickHandler = (e) => {};
 
-  const decimalClickHandler = (e) => {
-    const value = e.target.id;
-    setCalculator({
-      ...calculator,
-      operator: "",
-      statement: !calculator.input.toString().includes(".")
-        ? calculator.statement + value
-        : calculator.statement,
-      input: !calculator.input.toString().includes(".")
-        ? calculator.input + value
-        : calculator.input,
-    });
-  };
+  const operatorClickHandler = (e) => {};
 
-  const operatorClickHandler = (e) => {
-    const value = e.target.id;
-
-    if (calculator.operator) {
-      setCalculator({ ...calculator });
-    } else {
-      setCalculator({
-        ...calculator,
-        operator: value,
-        statement: calculator.statement + value,
-      });
-    }
-  };
-
-  const equalsClickHandler = () => {
-    setCalculator({
-      operator: "",
-      input: "",
-      statement: "",
-      error: "",
-    });
-  };
+  const equalsClickHandler = () => {};
 
   return (
     <CalculatorContext.Provider
