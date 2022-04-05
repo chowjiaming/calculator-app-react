@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import CalculatorContext from "../../../helpers/CalculatorContext";
+import CalculatorContext from "../../../helpers/calculatorContext";
 import "./Button.css";
 
 export default function Button({ button }) {
@@ -14,9 +14,8 @@ export default function Button({ button }) {
   } = useContext(CalculatorContext);
 
   return (
-    <div
+    <button
       className={`button ${type}`}
-      id={value}
       onClick={
         type === "rst"
           ? resetClickHandler
@@ -32,6 +31,6 @@ export default function Button({ button }) {
       }
     >
       {value}
-    </div>
+    </button>
   );
 }

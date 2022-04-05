@@ -1,5 +1,5 @@
-import { ThemeProvider } from "../helpers/ThemeContext";
-import { CalculatorProvider } from "../helpers/CalculatorContext";
+import { ThemeProvider } from "../helpers/themeContext";
+import { CalculatorProvider } from "../helpers/calculatorContext";
 import Attributions from "./Attributions/Attributions";
 import Header from "./Header/Header";
 import Display from "./Display/Display";

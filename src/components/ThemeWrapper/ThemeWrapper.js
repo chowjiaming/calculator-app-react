@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import ThemeContext from "../../helpers/ThemeContext";
+import ThemeContext from "../../helpers/themeContext";
 import "./ThemeWrapper.css";
 
 export default function ThemeWrapper({ children }) {

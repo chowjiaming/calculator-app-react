@@ -35,8 +35,8 @@
   --key-shadow-two: hsl(25, 99%, 27%);
   --key-background-three: hsl(45, 7%, 89%);
   --key-shadow-three: hsl(35, 11%, 61%);
-  --font-colour-one: hsl(60, 10%, 19%);
-  --font-colour-two: hsl(0, 0%, 100%);
+  --font-colour-two: hsl(60, 10%, 19%);
+  --font-colour-one: hsl(0, 0%, 100%);
 }
 [data-theme="3"] {
   --main-background: hsl(268, 75%, 9%);
@@ -48,8 +48,8 @@
   --key-shadow-two: hsl(177, 92%, 70%);
   --key-background-three: hsl(268, 47%, 21%);
   --key-shadow-three: hsl(290, 70%, 36%);
-  --font-colour-one: hsl(52, 100%, 62%);
-  --font-colour-two: hsl(0, 0%, 100%);
+  --font-colour-two: hsl(52, 100%, 62%);
+  --font-colour-one: hsl(0, 0%, 100%);
 }
 
 body {
