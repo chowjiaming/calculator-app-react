@@ -18,6 +18,10 @@
   background-color: var(--key-shadow-three);
   box-shadow: 0 5px 0 var(--key-background-three);
 }
+.button:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 0 var(--key-background-three);
+}
 
 .button-theme-one {
   color: var(--font-colour-one);

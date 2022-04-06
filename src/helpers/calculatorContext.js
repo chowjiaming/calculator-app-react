@@ -29,7 +29,7 @@ export const CalculatorProvider = ({ children }) => {
 
   const numClickHandler = (e) => {
     const value = e.target.innerHTML;
-    if (removeCommas(calculator.input).length < 8) {
+    if (removeCommas(calculator.input).length <= 10) {
       setCalculator({
         ...calculator,
         input:
