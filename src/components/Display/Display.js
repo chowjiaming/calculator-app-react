@@ -7,6 +7,10 @@ export default function Display() {
 
   return (
     <div className="display-wrapper">
+      {calculator.error ? <p className="error">Error: {calculator.error}</p> : null}
+      {calculator.operator ? (
+        <p className="operator">Operator: {calculator.operator}</p>
+      ) : null}
       <div className="display">
         {calculator.input ? calculator.input : calculator.result}
       </div>

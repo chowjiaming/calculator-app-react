@@ -22,9 +22,17 @@
   }
 }
 
-.calculate-statement {
+.error {
   position: absolute;
-  font-size: 0.6em;
+  font-size: 0.5em;
   color: var(--key-background-two);
-  transform: translate(0.5em, 0.5em);
+  transform: translate(0.5em, -100%);
+}
+
+.operator {
+  position: absolute;
+  right: 0;
+  font-size: 0.5em;
+  color: var(--key-background-two);
+  transform: translate(-0.5em, 0.3em);
 }

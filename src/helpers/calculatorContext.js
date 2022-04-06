@@ -8,14 +8,15 @@ export const CalculatorProvider = ({ children }) => {
     operator: "",
     input: 0,
     result: 0,
+    error: "",
   });
 
   const resetClickHandler = () => {
     setCalculator({
-      ...calculator,
       operator: "",
       input: 0,
       result: 0,
+      error: "",
     });
   };
 
@@ -24,6 +25,7 @@ export const CalculatorProvider = ({ children }) => {
       ...calculator,
       operator: "",
       input: 0,
+      error: "",
     });
   };
 
@@ -40,17 +42,27 @@ export const CalculatorProvider = ({ children }) => {
             : addCommas(calculator.input + value),
         result: !calculator.operator ? 0 : calculator.result,
       });
+    } else {
+      setCalculator({
+        ...calculator,
+        error: "Too many digits",
+      });
     }
   };
 
   const decimalClickHandler = (e) => {
     const value = e.target.innerHTML;
-    setCalculator({
-      ...calculator,
-      input: !calculator.input.toString().includes(".")
-        ? calculator.input + value
-        : calculator.input,
-    });
+    if (!calculator.input.toString().includes(".")) {
+      setCalculator({
+        ...calculator,
+        input: calculator.input + value,
+      });
+    } else {
+      setCalculator({
+        ...calculator,
+        error: "Only one decimal possible",
+      });
+    }
   };
 
   const operatorClickHandler = (e) => {
@@ -62,6 +74,7 @@ export const CalculatorProvider = ({ children }) => {
           ? calculator.input
           : calculator.result,
       input: 0,
+      error: "",
     });
   };
 
@@ -71,7 +84,7 @@ export const CalculatorProvider = ({ children }) => {
         ...calculator,
         result:
           calculator.input === "0" && calculator.operator === "/"
-            ? "Can't divide with 0"
+            ? "-E-"
             : addCommas(
                 calculate(
                   Number(removeCommas(calculator.result)),
@@ -81,6 +94,10 @@ export const CalculatorProvider = ({ children }) => {
               ),
         operator: "",
         input: 0,
+        error:
+          calculator.input === "0" && calculator.operator === "/"
+            ? "Cannot divide by zero"
+            : "",
       });
     }
   };
