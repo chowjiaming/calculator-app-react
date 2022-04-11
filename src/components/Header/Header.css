@@ -67,7 +67,7 @@ header {
   margin: 0 50%;
   transform: translateX(-50%);
 }
-.switch__knob-theme--three {
+.switch__knob--theme-three {
   margin-left: 100%;
   transform: translateX(-100%);
 }
