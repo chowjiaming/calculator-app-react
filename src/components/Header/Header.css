@@ -4,14 +4,14 @@ header {
   margin-bottom: 0.5em;
 }
 
-.app-name {
+.header__name {
   transform: translateY(-50%);
   color: var(--font-colour-two);
 }
 
-.theme-toggle-container {
+.header__container {
   display: flex;
-  gap: 0.8em;
+  gap: 0.5em;
   align-items: center;
   margin-left: auto;
 }
@@ -25,49 +25,49 @@ header {
   transition: all 0.3s;
 }
 
-.switch-container {
+.switch__container {
   position: relative;
 }
 
-.theme-number {
+.switch__number {
   cursor: pointer;
   position: absolute;
   top: 0;
 }
-.theme-number:nth-child(1) {
+.switch__number:nth-child(1) {
   left: 0;
   transform: translate(100%, -100%);
 }
-.theme-number:nth-child(1):hover {
+.switch__number:nth-child(1):hover {
   color: var(--key-shadow-two);
 }
-.theme-number:nth-child(2) {
+.switch__number:nth-child(2) {
   left: 50%;
   transform: translate(-50%, -100%);
 }
-.theme-number:nth-child(2):hover {
+.switch__number:nth-child(2):hover {
   color: var(--key-shadow-two);
 }
-.theme-number:nth-child(3) {
+.switch__number:nth-child(3) {
   right: 0;
   transform: translate(-50%, -100%);
 }
-.theme-number:nth-child(3):hover {
+.switch__number:nth-child(3):hover {
   color: var(--key-shadow-two);
 }
 
-.knob {
+.switch__knob {
   width: 0.5em;
   height: 0.5em;
   border-radius: 50%;
   background-color: var(--key-background-two);
   transition: all 0.5s;
 }
-.knob-theme-two {
+.switch__knob--theme-two {
   margin: 0 50%;
   transform: translateX(-50%);
 }
-.knob-theme-three {
+.switch__knob-theme--three {
   margin-left: 100%;
   transform: translateX(-100%);
 }

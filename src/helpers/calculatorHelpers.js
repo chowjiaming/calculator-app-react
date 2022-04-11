@@ -1,7 +1,7 @@
 export const addCommas = (number) =>
   String(number).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 
-export const removeCommas = (number) => number.toString().replace(/,/g, '');
+export const removeCommas = (number) => number.toString().replace(/,/g, "");
 
 export const calculate = (x, y, operator) => {
   let answer;

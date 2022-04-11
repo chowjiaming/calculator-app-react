@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import CalculatorContext from "../../context/calculatorContext";
+import button--num from "../../context/calculatorContext";
 import "./Display.css";
 
 export default function Display() {
-  const { calculator } = useContext(CalculatorContext);
+  const { calculator } = useContext(button--num);
 
   return (
     <section className="display__container">

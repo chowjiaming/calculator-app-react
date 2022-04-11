@@ -1,4 +1,4 @@
-.input-container {
+.input__container {
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
@@ -10,7 +10,7 @@
 }
 
 @media (min-width: 45rem) {
-  .input-container {
+  .input__container {
     padding: 0.9em;
     gap: 0.7em;
   }

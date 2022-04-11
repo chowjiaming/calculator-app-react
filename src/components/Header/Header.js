@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import ThemeContext from "../../helpers/themeContext";
+import ThemeContext from "../../context/themeContext";
 import { themeClass } from "../../helpers/themeHelpers";
 import "./Header.css";
 
@@ -9,24 +9,24 @@ export default function Header() {
   const knobClass = themeClass(theme.number);
 
   return (
-    <header>
-      <h1 className="app-name">calc</h1>
-      <div className="theme-toggle-container">
-        <h2 className="theme-title">THEME</h2>
-        <div className="switch-container">
-          <h2 className="theme-number" onClick={handleNumberClick}>
+    <header className="header">
+      <h1 className="header__name">calc</h1>
+      <div className="header__container">
+        <h2 className="header__title">THEME</h2>
+        <nav className="switch__container">
+          <h2 className="switch__number" onClick={handleNumberClick}>
             1
           </h2>
-          <h2 className="theme-number" onClick={handleNumberClick}>
+          <h2 className="switch__number" onClick={handleNumberClick}>
             2
           </h2>
-          <h2 className="theme-number" onClick={handleNumberClick}>
+          <h2 className="switch__number" onClick={handleNumberClick}>
             3
           </h2>
           <div className="switch" onClick={handleSwitchClick}>
-            <div className={`knob knob${knobClass}`} />
+            <div className={`switch__knob switch__knob-${knobClass}`} />
           </div>
-        </div>
+        </nav>
       </div>
     </header>
   );

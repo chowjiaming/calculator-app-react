@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { calculate, addCommas, removeCommas } from "./calculatorHelpers";
+import { calculate, addCommas, removeCommas } from "../helpers/calculatorHelpers";
 
 const CalculatorContext = createContext();
 

@@ -7,5 +7,5 @@ export default function Input() {
     return <Button button={button} key={button.value} />;
   });
 
-  return <div className="input-container">{calculatorButtons}</div>;
+  return <section className="input__container">{calculatorButtons}</section>;
 }
